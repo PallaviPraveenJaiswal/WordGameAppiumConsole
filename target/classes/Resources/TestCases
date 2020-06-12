@@ -1,0 +1,70 @@
+Test Cases
+
+	Banner
+1)	Tapping on the banner ad will take the user to what it advertises on Play Store, App Store or browser
+	a)	Load the app with a user
+	b)	Tap on a banner ad	
+	c)	Expected Result: Tapping on the banner will take the user to what it advertises on Play Store, App Store, or browser
+
+
+
+2)	Banner Ads handle losing and regaining internet connection
+	a)	Launch application
+	b)	Allow a banner to load on the game screen
+	c)	Turn off wi-fi connection from device
+	d)	Wait for 5 seconds and turn Wi-Fi connection back on
+	e)	Expected Result: Banner ads handle losing and regaining internet connection
+
+
+3)	Banners are independent from the window the player is in
+	a)	Launch application
+	b)	Select different game windows(e.g, store, inbox)
+	c)	Expected Result: if the player changes to a different window, the banner will not be forced to refresh or to be reloaded.
+
+
+
+4)	Banner still appear after powering on from device’s Power button
+	a)	Load the app with a user
+	b)	Verify that banners start appearing
+	c)	Turn the phone off and back on
+	d)	Load the app
+	e)	Expected result: Banners still appear after powering on from device’s Power button
+
+
+5)	Banner switches after a few seconds
+	a)	Load the app with a user
+	b)	Wait after ‘x’ seconds for the banner to refresh
+	c)	Expected Result: Banner switches after ‘x’ seconds
+
+
+6)	Banner should not load video ads
+	a)	Load an app to a section where banners appear
+	b)	Cycle through multiple banners
+	c)	Expected Result: Banner ads should not be loading or attempting to load videos as they can result in slowing down and crashing the app
+		Interstitial
+
+		1)	On return from interstitial, user is back to original state/screen in app
+			a)	Load the app with a user
+			b)	Trigger an interstitial
+			c)	Close out the interstitial
+			d)	Expected Result: when returning from an ad, make sure the user is where they are expected to be in the app and that all following prompts and behaviors are expected. For example, after watching an ad during a game, the user should be in the same game at the same place and not somewhere else.
+
+		2)	Ads handle interrupt with Siri/ Google Assistant
+			a)	Play a video ad
+			b)	Hold down the device’s Home button during an ad
+			c)	Expected Result: the ad is paused when the google assistant is accessed
+
+				i.	Interact with Google Assistant
+				ii.	Expected Result: the ad is paused when the assistant is accessed
+
+		a.	Return to the ad
+		b.	Expected Result: the user returns to the add when closing the Google assistant and the ad continues playing ( the user may have to manually resume/ unpause the ad)
+			Rewarded Video
+		1)	Video ads do not last longer than 30 seconds
+			a)	Load a rewarded video
+		2)	Tapping install button takes user to Play Store, device browser or in-game view
+			a)	Load a rewarded video
+			b)	Tap on them to navigate to the Play Store or browser
+			c)	Return to the app
+			d)	Expected Result: Fail this case if tapping the button in an ad takes the user to a broken or incorrect link/app, or, if the button doesn’t function at all
+

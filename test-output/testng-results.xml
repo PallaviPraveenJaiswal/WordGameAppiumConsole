@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="302740" started-at="2020-06-12T13:38:32Z" finished-at="2020-06-12T13:43:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="302740" started-at="2020-06-12T13:38:32Z" finished-at="2020-06-12T13:43:35Z">
+      <class name="TestCases.VerifyBanner_01">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.VerifyBanner_01@146ba0ac]" name="setup" is-config="true" duration-ms="20876" started-at="2020-06-12T13:38:32Z" finished-at="2020-06-12T13:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyBannerAds()[pri:1, instance:TestCases.VerifyBanner_01@146ba0ac]" name="verifyBannerAds" duration-ms="41372" started-at="2020-06-12T13:38:53Z" finished-at="2020-06-12T13:39:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBannerAds -->
+        <test-method status="PASS" signature="End()[pri:0, instance:TestCases.VerifyBanner_01@146ba0ac]" name="End" is-config="true" duration-ms="3731" started-at="2020-06-12T13:39:34Z" finished-at="2020-06-12T13:39:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- End -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.VerifyBanner_01@146ba0ac]" name="setup" is-config="true" duration-ms="21563" started-at="2020-06-12T13:39:38Z" finished-at="2020-06-12T13:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="verifyBannerAdsWithAndWithoutWifi()[pri:2, instance:TestCases.VerifyBanner_01@146ba0ac]" name="verifyBannerAdsWithAndWithoutWifi" duration-ms="11041" started-at="2020-06-12T13:40:00Z" finished-at="2020-06-12T13:40:11Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\prave\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell svc wifi disable' exited with code 137'; Stderr: ''; Code: '137'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1QIO4VG', ip: '192.168.0.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\WWF Words with Friends H..., appActivity: com.wwftool.MainActivity, appPackage: com.wwftool, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\WWF Words with Friends H..., appActivity: com.wwftool.MainActivity, appPackage: com.wwftool, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 66, takesScreenshot: true, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a614450b-e9a0-426b-8017-044b1644efa7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\prave\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell svc wifi disable' exited with code 137'; Stderr: ''; Code: '137'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1QIO4VG', ip: '192.168.0.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\WWF Words with Friends H..., appActivity: com.wwftool.MainActivity, appPackage: com.wwftool, automationName: UiAutomator2, databaseEnabled: false, desired: {app: D:\WWF Words with Friends H..., appActivity: com.wwftool.MainActivity, appPackage: com.wwftool, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 66, takesScreenshot: true, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a614450b-e9a0-426b-8017-044b1644efa7
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+at io.appium.java_client.android.connection.HasNetworkConnection.setConnection(HasNetworkConnection.java:34)
+at FrameworkBase.UtilClass.WifiOff(UtilClass.java:27)
+at TestCases.VerifyBanner_01.verifyBannerAdsWithAndWithoutWifi(VerifyBanner_01.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBannerAdsWithAndWithoutWifi -->
+        <test-method status="PASS" signature="End()[pri:0, instance:TestCases.VerifyBanner_01@146ba0ac]" name="End" is-config="true" duration-ms="2420" started-at="2020-06-12T13:40:11Z" finished-at="2020-06-12T13:40:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- End -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.VerifyBanner_01@146ba0ac]" name="setup" is-config="true" duration-ms="19751" started-at="2020-06-12T13:40:13Z" finished-at="2020-06-12T13:40:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyBannerAdsSwitching()[pri:3, instance:TestCases.VerifyBanner_01@146ba0ac]" name="verifyBannerAdsSwitching" duration-ms="93608" started-at="2020-06-12T13:40:33Z" finished-at="2020-06-12T13:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBannerAdsSwitching -->
+        <test-method status="PASS" signature="End()[pri:0, instance:TestCases.VerifyBanner_01@146ba0ac]" name="End" is-config="true" duration-ms="4656" started-at="2020-06-12T13:42:06Z" finished-at="2020-06-12T13:42:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- End -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.VerifyBanner_01@146ba0ac]" name="setup" is-config="true" duration-ms="21295" started-at="2020-06-12T13:42:11Z" finished-at="2020-06-12T13:42:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="verifyBannerAdsOnRestartMobile()[pri:4, instance:TestCases.VerifyBanner_01@146ba0ac]" name="verifyBannerAdsOnRestartMobile" duration-ms="59517" started-at="2020-06-12T13:42:32Z" finished-at="2020-06-12T13:43:32Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error getting device platform version. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\prave\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release' exited with code 1'; Stderr: 'adb.exe: device unauthorized.
+This adb server's $ADB_VENDOR_KEYS is not set
+Try 'adb kill-server' if that seems wrong.
+Otherwise check for a confirmation dialog on your device.'; Code: '1'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1QIO4VG', ip: '192.168.0.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device platform version. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\prave\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release' exited with code 1'; Stderr: 'adb.exe: device unauthorized.
+This adb server's $ADB_VENDOR_KEYS is not set
+Try 'adb kill-server' if that seems wrong.
+Otherwise check for a confirmation dialog on your device.'; Code: '1'
+    at getResponseForW3CError (C:\Users\prave\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\prave\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1QIO4VG', ip: '192.168.0.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error getting device platform version. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\prave\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release' exited with code 1'; Stderr: 'adb.exe: device unauthorized.
+This adb server's $ADB_VENDOR_KEYS is not set
+Try 'adb kill-server' if that seems wrong.
+Otherwise check for a confirmation dialog on your device.'; Code: '1'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1QIO4VG', ip: '192.168.0.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device platform version. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\prave\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release' exited with code 1'; Stderr: 'adb.exe: device unauthorized.
+This adb server's $ADB_VENDOR_KEYS is not set
+Try 'adb kill-server' if that seems wrong.
+Otherwise check for a confirmation dialog on your device.'; Code: '1'
+    at getResponseForW3CError (C:\Users\prave\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\prave\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1QIO4VG', ip: '192.168.0.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:96)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
+at FrameworkBase.BaseClass.setup(BaseClass.java:46)
+at TestCases.VerifyBanner_01.verifyBannerAdsOnRestartMobile(VerifyBanner_01.java:79)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+... 40 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error getting device platform version. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\prave\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release' exited with code 1'; Stderr: 'adb.exe: device unauthorized.
+This adb server's $ADB_VENDOR_KEYS is not set
+Try 'adb kill-server' if that seems wrong.
+Otherwise check for a confirmation dialog on your device.'; Code: '1'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1QIO4VG', ip: '192.168.0.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device platform version. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\prave\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release' exited with code 1'; Stderr: 'adb.exe: device unauthorized.
+This adb server's $ADB_VENDOR_KEYS is not set
+Try 'adb kill-server' if that seems wrong.
+Otherwise check for a confirmation dialog on your device.'; Code: '1'
+    at getResponseForW3CError (C:\Users\prave\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\prave\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBannerAdsOnRestartMobile -->
+        <test-method status="PASS" signature="End()[pri:0, instance:TestCases.VerifyBanner_01@146ba0ac]" name="End" is-config="true" duration-ms="2808" started-at="2020-06-12T13:43:32Z" finished-at="2020-06-12T13:43:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- End -->
+      </class> <!-- TestCases.VerifyBanner_01 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
